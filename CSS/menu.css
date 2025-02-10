@@ -1,0 +1,87 @@
+/* Estilos para centralizar a tabela e a página */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.menu table {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.menu td {
+    padding: 10px;
+}
+
+/* Estilos para os botões principais (Gerar Financeiro e Relatórios) */
+.highlight-buttons {
+    margin-bottom: 20px; /* Espaço entre os botões em destaque e os da grade */
+    text-align: center;
+    width: 100%; /* Garante que ocupe toda a largura */
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Distância entre os botões */
+}
+
+.highlight-buttons button {
+    font-size: 18px;
+    padding: 15px 30px;
+    border: 2px solid #007BFF;
+    background-color: transparent; /* Fundo transparente */
+    color: #007BFF; /* Cor do texto */
+    cursor: pointer;
+    border-radius: 5px;
+    width: 180px;
+    height: 80px; /* Tamanho fixo para os botões */
+    text-align: center;
+    box-sizing: border-box; /* Garante que o padding não altere o tamanho do botão */
+    transition: all 0.3s ease;
+}
+
+.highlight-buttons button:hover {
+    background-color: #f0f0f0; /* Efeito de hover com cor neutra */
+    transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+}
+
+.highlight-buttons i {
+    margin-right: 5px; /* Menor margem entre ícone e texto */
+    font-size: 24px; /* Tamanho do ícone */
+}
+
+/* Estilos para os botões da grade */
+.menu button {
+    font-size: 18px;
+    padding: 15px 30px;
+    border: 2px solid #007BFF;
+    background-color: transparent; /* Botões neutros, sem fundo */
+    color: #007BFF; /* Cor do texto */
+    cursor: pointer;
+    border-radius: 5px;
+    width: 180px;
+    height: 80px; /* Tamanho fixo para os botões */
+    text-align: center;
+    margin: 5px; /* Pequena margem entre os botões */
+    box-sizing: border-box; /* Garante que o padding não altere o tamanho do botão */
+    transition: all 0.3s ease;
+
+}
+
+.menu button:hover {
+    background-color: #f0f0f0; /* Efeito de hover com cor neutra */
+    transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+}
+
+.menu i {
+    margin-right: 5px; /* Diminui o espaço entre o ícone e o texto */
+    font-size: 24px; /* Tamanho do ícone */
+}
+
+.menu .fa-user { color: #007BFF; } /* Cor do ícone Cliente */
+.menu .fa-file-signature { color: #FF5733; } /* Cor do ícone Contrato */
+.menu .fa-credit-card { color: #28A745; } /* Cor do ícone Forma de Pagamento */
+.menu .fa-cogs { color: #FFC107; } /* Cor do ícone Produtos */

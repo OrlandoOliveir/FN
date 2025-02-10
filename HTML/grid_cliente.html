@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes Cadastrados</title>
+    <link rel="stylesheet" href="../CSS/grid_cliente.css">
+    <!-- Link para o Font Awesome (para o ícone de atualização) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="menu">
+        <h2>Clientes Cadastrados</h2>
+
+        <!-- Botões de ação acima da grid -->
+        <div class="actions">
+            <button class="btn-update">
+                <i class="fas fa-sync-alt"></i> <!-- Ícone de atualização -->
+            </button>
+            <a href="cliente.html"><button class="btn-create">Cadastrar Novo Cliente</button></a>
+        </div>
+
+        <!-- Tabela com dados dos clientes -->
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Endereço</th>
+                        <th>Telefone</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aqui, os dados dos clientes serão inseridos dinamicamente via JavaScript -->
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <button class="btn-edit" data-id="1">Editar</button>
+                            <button class="btn-delete" data-id="1">Excluir</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="/JS/clientes_grid.js"></script>
+</body>
+</html>

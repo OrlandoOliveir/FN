@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formas de Pagamento Cadastradas</title>
+    <link rel="stylesheet" href="../CSS/grid_forma_pagamento.css">
+    <!-- Link para o FontAwesome (para os ícones de ação) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="menu">
+        <h2>Formas de Pagamento</h2>
+
+        <!-- Botões de ação acima da grid -->
+        <div class="actions">
+            <button class="btn-update">
+                <i class="fas fa-sync-alt"></i> <!-- Ícone de atualização -->
+            </button>
+           <a href="forma_pagamento.html"><button class="btn-create">Cadastrar Nova Forma de Pagamento</button></a>
+        </div>
+
+        <!-- Tabela com dados das formas de pagamento -->
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Descrição</th>
+                        <th>Quantidade de Vezes</th>
+                        <th>Tipo</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aqui, os dados das formas de pagamento serão inseridos dinamicamente via JavaScript -->
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <button class="btn-edit" data-id="1">Editar</button>
+                            <button class="btn-delete" data-id="1">Excluir</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="/JS/formas_pagamento_grid.js"></script>
+</body>
+</html>

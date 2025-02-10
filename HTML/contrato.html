@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Contrato</title>
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="../CSS/contrato.css">
+    <!-- Link para o FontAwesome (ícones) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="menu">
+        <h2>Cadastro de Contrato</h2>
+        <!-- Formulário de cadastro de contrato -->
+        <form class="form-container">
+            <div class="form-group">
+                <label for="id-contrato">ID Contrato:</label>
+                <input type="text" id="id-contrato" name="id-contrato" placeholder="ID do contrato" required readonly>
+            </div>
+            <div class="form-group">
+                <label for="cliente">Cliente:</label>
+                <div class="input-group">
+                    <input type="text" id="cliente" name="cliente" placeholder="Selecione o cliente" required>
+                    <button type="button" class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="forma-pagamento">Forma de Pagamento:</label>
+                <div class="input-group">
+                    <input type="text" id="forma-pagamento" name="forma-pagamento" placeholder="Selecione a forma de pagamento" required>
+                    <button type="button" class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="produto">Produto:</label>
+                <div class="input-group">
+                    <input type="text" id="produto" name="produto" placeholder="Selecione o produto" required>
+                    <button type="button" class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            
+            <!-- Botões Salvar e Excluir -->
+            <div class="form-actions">
+                <button type="submit" class="btn-save"><i class="fas fa-save"></i> Salvar</button>
+                <button type="button" class="btn-delete"><i class="fas fa-trash-alt"></i> Excluir</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

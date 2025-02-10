@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forma de Pagamento</title>
+    <link rel="stylesheet" href="../CSS/forma_pagamento.css"> <!-- Seu arquivo de estilo -->
+</head>
+<body>
+    <div class="menu">
+        <h2>Forma de Pagamento</h2>
+        <!-- Formulário de cadastro de forma de pagamento -->
+        <form class="form-container">
+            <!-- ID (Somente leitura) -->
+            <div class="form-group">
+                <label for="id-pagamento">ID Pagamento:</label>
+                <input type="text" id="id-pagamento" name="id-pagamento" placeholder="ID Pagamento" readonly>
+            </div>
+
+            <!-- Nome -->
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite o nome da forma de pagamento" required>
+            </div>
+
+            <!-- Tipo (Pré ou Pós) -->
+            <div class="form-group">
+                <label for="tipo">Tipo:</label>
+                <select id="tipo" name="tipo" required>
+                    <option value="pre">Pré</option>
+                    <option value="pos">Pós</option>
+                </select>
+            </div>
+
+            <!-- Quantidade de vezes (dropdown) -->
+            <div class="form-group">
+                <label for="qtd-vezes">Quantidade de vezes:</label>
+                <select id="qtd-vezes" name="qtd-vezes" required>
+                    <!-- Opções de 1 a 12 -->
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+            </div>
+
+            <!-- Botões Salvar e Excluir -->
+            <div class="form-actions">
+                <button type="submit" class="btn-save"><i class="fas fa-save"></i>Salvar</button>
+                <button type="button" class="btn-delete"><i class="fas fa-trash"></i>Excluir</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

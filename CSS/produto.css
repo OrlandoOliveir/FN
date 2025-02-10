@@ -1,0 +1,111 @@
+/* Estilos para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center; /* Alinha horizontalmente */
+    align-items: center;     /* Alinha verticalmente */
+    height: 100vh;           /* Preenche toda a altura da tela */
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* Estilos para o menu (formulário) */
+.menu {
+    text-align: center;
+    width: 100%;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #007BFF; /* Cor do título */
+}
+
+/* Estilos para o formulário */
+.form-container {
+    margin-left: 37%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Largura do formulário */
+    text-align: left;
+}
+
+/* Estilos para os campos do formulário */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 16px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+/* Estilo para o campo ID Produto somente leitura */
+#id-produto {
+    background-color: #f4f4f4;
+    cursor: not-allowed;
+}
+
+/* Estilos para os botões */
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    width: 48%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+button i {
+    margin-right: 8px; /* Espaçamento entre o ícone e o texto */
+}
+
+/* Estilos para o botão salvar */
+.btn-save {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-save:hover {
+    background-color: #218838;
+}
+
+/* Estilos para o botão excluir */
+.btn-delete {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-delete:hover {
+    background-color: #c82333;
+}
+
+/* Estilos adicionais para focar e interagir com os campos */
+.form-group input:focus {
+    border-color: #0056b3; /* Cor de foco para os campos */
+    outline: none;
+}
